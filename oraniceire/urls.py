@@ -20,5 +20,5 @@ from organic_eire.views import my_blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', my_blog, name='blog'),
+    path('home/', my_blog, name='home'),
 ]
