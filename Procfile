@@ -1,1 +1,1 @@
-web: gunicorn organiceire.wsgi
+web: gunicorn oraniceire.wsgi
