@@ -1,1 +1,1 @@
-web: gunicorn organic_eire.wsgi
+web: gunicorn organiceire.wsgi
