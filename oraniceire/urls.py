@@ -15,10 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from organic_eire.views import my_blog
+from django.urls import path, include
+#from organic_eire.views import my_blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', my_blog, name='home'),
+    path("", include("organic_eire.urls"), name="organic_eire-urls"),
 ]
