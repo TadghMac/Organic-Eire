@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'organic_eire',
+    'links',
 ]
 
 MIDDLEWARE = [

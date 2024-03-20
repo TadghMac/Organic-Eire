@@ -19,6 +19,7 @@ from django.urls import path, include
 #from organic_eire.views import my_blog
 
 urlpatterns = [
+    path("links/", include("links.urls"), name="links-urls"),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     path("", include("organic_eire.urls"), name="organic_eire-urls"),
