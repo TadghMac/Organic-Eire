@@ -3,19 +3,48 @@
 {% load static %}
 <div class="container mt-5">
   <div class="row">
-    <div class="col-4 text-center">
-      <img src="{% static 'images/dept.jpg' %}" width="100%" />
-    </div>
+    <div class="col-4 text-right">
+      <a href="https://www.gov.ie/en/organisation/department-of-agriculture-food-and-the-marine/" target="_blank">
+        <img src="{% static 'images/deptagr.jpg' %}" width="80%" />
+      </a>
+      </div>
     <div class="col-8">
       <!-- Title goes between these h2 tags -->
       <h2>{{ links.title }}</h2>
       <!-- Content goes directly underneath this -->
       {{ links.content | safe }}
     </div>
-  </div>
+  </div> 
+</div>
+  
   <div class="row">
     <div class="col-4 text-right">
-      <img src="{% static 'images/ioa.jpg' %}" width="100%" />
+      <a href="https://www.teagasc.ie/rural-economy/organics/" target="_blank" >
+        <img src="{% static 'images/teagasc.jpg' %}" width="80%" alt="Teagasc Link to organic page"/>
+      </a>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-4 text-right">
+      <a href="https://www.irishorganicassociation.ie/" target="_blank">
+        <img src="{% static 'images/ioa.jpg' %}" width="100%" alt="Irish Organic Associations Link" />
+      </a>
+    </div>
+  
+    <div class="row">
+    <div class="col-4 text-right">
+      <a href="https://organictrust.ie/about" target="_blank">
+        <img src="{% static 'images/Organic-Trust.jpg' %}" width="55%" alt="Organic Trust Link"/>
+      </a>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col-4 text-right">
+      <a href="https://nots.ie/" target="_blank">
+        <img src="{% static 'images/skillnet.jpg' %}" width="80%" height="80%" alt="National Organic Training Skillnet Link"/>
+      </a>
     </div>
   </div>
 </div>
