@@ -20,6 +20,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path("links/", include("links.urls"), name="links-urls"),
+    path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     path("", include("organic_eire.urls"), name="organic_eire-urls"),
