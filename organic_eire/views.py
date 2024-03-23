@@ -14,7 +14,7 @@ class PostList(generic.ListView):
 def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = post.comments.filter(approved=True).order_by("-created_on")
+    comments = post.comments.filter().order_by("-created_on")
     comment_count = comments.count()
     comment_form = CommentForm(request.POST or None)
 
@@ -25,7 +25,7 @@ def post_detail(request, slug):
         comment.save()
         messages.add_message(
             request, messages.SUCCESS,
-            'Comment submitted and awaiting approval'
+            'Comment submitted '
         )
         comment_form = CommentForm()  # Reinitialize the form for a fresh instance
 

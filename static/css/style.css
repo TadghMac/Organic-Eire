@@ -43,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #4ae13a;
 }
 
 .scale {
@@ -52,7 +52,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: rgb(17, 14, 14);
     margin: 4px;
     text-transform: uppercase;
 }
@@ -153,7 +153,7 @@ body {
 }
 
 .faded {
-    color: rgb(172, 175, 175);
+    color: rgb(9, 9, 9);
 }
 
 .approval {

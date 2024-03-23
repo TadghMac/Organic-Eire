@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'organic_eire',
     'links',
+    'about',
 ]
 
 SITE_ID = 1

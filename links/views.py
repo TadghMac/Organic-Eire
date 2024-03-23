@@ -4,7 +4,7 @@ from .models import Links
 
 def links_me(request):
     """
-    Renders the About page
+    Renders the Links page
     """
     links = Links.objects.all().order_by('-updated_on').first()
 
