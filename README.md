@@ -15,3 +15,5 @@ Article Publication: Registered users can publish articles on various topics rel
 Resource Hub: Access useful links, resources, and information to support your journey towards organic farming and sustainable living.
 
 Social Integration: Connect with us on social media platforms to stay updated on the latest news, events, and discussions.
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/bfe66590-f217-495b-9613-68888a64840c)
