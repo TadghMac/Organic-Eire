@@ -11,11 +11,11 @@
       </div>
       <div class="col-4 text-center">
           <a href="{{ link.link_url }}" target="_blank">
-          <img src="{{ link.link_image }}" width="100%" alt="{{ link.title }}" />
+          <img src="{{ link.link_image.url }}" width="100%" alt="{{ link.title }}" />
         </a>
       </div>
       <div class="col-4">
-        <!-- This column is left empty -->
+        
       </div>
     </div>
   {% endfor %}
