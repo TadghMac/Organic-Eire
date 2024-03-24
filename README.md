@@ -1,5 +1,7 @@
 Organic Éire
+
 Overview
+
 Welcome to Organic Éire, a platform dedicated to promoting organic farming, sustainability, and environmental conservation. Our app serves as a hub for farmers, enthusiasts, and experts to share insights, ideas, and experiences related to organic practices and sustainable living.
 
 Key Features
