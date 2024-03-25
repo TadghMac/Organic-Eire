@@ -201,6 +201,10 @@ Lighthouse test Articles page
 
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/8367a357-7d9c-481d-a456-5a69886f5b5f)
 
+I changed to footer to green which then improved the score 
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/5c8e6532-8e4c-447d-8241-d1b852ad4389)
+
 
 
 "" BUGS/ERRORS ""
@@ -219,9 +223,7 @@ In future versions  Id like to impliment the following:
 
 -classifieds section: A section for users to buy, sell , look for goods and services associates with organics.
 
-
-
 -take the content box out of my custom model : This field is not necessery but when I removed it the model broke so I chose to leave it for this version
 
--
+-CSS : I chose a basic color scheme and layouts, had I allocated more time for this I could have experimented with different color combinations to find the most harmonious palette for the page.
 
