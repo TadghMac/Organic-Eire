@@ -60,37 +60,38 @@ Links page concept
 
 **User**
 
-1. As a new visitor to the website, I want to be able to easily register for an account so that I can access exclusive content and features.
+1. As a new visitor to the website, I want to be able to easily register for an account so that I can access exclusive content and features.(Done)
 
 
 **Registered User**
 
-1.As a registered user, I want the website to be visually appealing and easy to navigate on both desktop and mobile devices.
+1.As a registered user, I want the website to be visually appealing and easy to navigate on both desktop and mobile devices.(Done)
 
-2.As a registered user interested in specific topics, I want to be able to search for articles by keyword or category.
+2.As a registered user interested in specific topics, I want to be able to search for articles by keyword or category(futrue feature)
 
-3.As a registered user, I want to be able to read detailed articles about various aspects of organic farming, including techniques, benefits, challenges, and success stories.
 
-4.As a registered user interested in engaging with the community, I want to be able to comment on articles and participate in discussions with other users.
+3.As a registered user, I want to be able to read detailed articles about various aspects of organic farming, including techniques, benefits, challenges, and success stories.(Done)
 
-5.As a registered user, I want to be able to log in to my account securely using my email and password.
+4.As a registered user interested in engaging with the community, I want to be able to comment on articles and participate in discussions with other users.(Done)
 
-6.As a registered user, I want the website to remember my login credentials for convenience.
+5.As a registered user, I want to be able to log in to my account securely using my email and password.(Done)
 
-7.As a registered user, I want to be able to update my profile information, including my name, email address, and profile picture.
+6.As a registered user, I want the website to remember my login credentials for convenience.(varies on user device settings)
 
-8.As a registered user, I want to be able to view a personalized dashboard that displays the latest organic farming articles, news, and updates.
+7.As a registered user, I want to be able to update my profile information, including my name, email address, and profile picture.(futrue feature)
 
-9. As a registered user, I want to be able to bookmark articles that I find particularly interesting or useful .
+8.As a registered user, I want to be able to view a personalized dashboard that displays the latest organic farming articles, news, and updates.(Done)
 
-10. As a registered user, I want to be able to share articles to my other social media accounts 
+9. As a registered user, I want to be able to bookmark articles that I find particularly interesting or useful .(futrue feature)
+
+10. As a registered user, I want to be able to share articles to my other social media accounts (futrue feature)
 
 **Admin**
-1.As an administrator of the website, I want to be able to manage user accounts, including approving registrations, resetting passwords, and banning users if necessary.
+1.As an administrator of the website, I want to be able to manage user accounts, including approving registrations, resetting passwords, and banning users if necessary.(Done)
 
-2.As an administrator, I want to be able to create, edit, and delete articles to keep the content of the website up to date and relevant.
+2.As an administrator, I want to be able to create, edit, and delete articles to keep the content of the website up to date and relevant.(Done)
 
-3.As an administrator, I want to be able to track website analytics to understand user behavior and improve the website's performance and user experience. 
+3.As an administrator, I want to be able to track website analytics to understand user behavior and improve the website's performance and user experience. (Done)
 
 ERD(original concept design) 
 
@@ -109,10 +110,27 @@ Can commment on articles ,can also post articles once they have been verified by
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/da63b1d6-4c0e-4eeb-af8d-aeca6f703e1c)
 
 
-Testing
+**Testing**
+Admin feature testing 
+
+users cant log in to admin
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/65287d96-8871-4f6a-942e-f84c23212589)
+
+A list of completetd actions proving CRUD functionality 
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/6a490969-d6a1-489d-aa1a-646882210f5c)
+
+Creating in my custom model
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/1f0ae21f-f527-4938-b974-a485524787d1)
 
 
-**Signed Up In/Out Test**
+Maing changes
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/3c8360b9-4caf-4434-90e5-8cda7c2b894a)
+
+
+
+**Articles ,Signed Up In/Out Test**
 In the following I created a new user (Billy). 
 
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/cbb07623-d6f1-4b31-aeb2-89f37a1a21a4)
@@ -140,8 +158,52 @@ comment successfully deleted
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/586c0e95-b4b5-45d8-8292-e913a9680364)
 
 Links Page test 
+
+
 All links are responsive, opens the link on a new window
 
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/9ad1d466-b348-4e3d-8764-15ec4f103f17)
 
+
+WAVE test:
+
+
+NOTE:Error in the test , the links actually work  
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/4d10ff9e-8d5e-42e9-b7b4-39084e8674e7)
+
+Article and comment section
+
+The Alerts here are for extra headings , In future versions this could be a option , the error is for low contrst in the comment counter
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/3ef04d50-70f8-49ba-af52-28c623c135e2)
+
+
+Lighthouse test on articles page
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/fc4ff515-6e1e-4f54-a1af-f1beb9dfb570)
+
+
+Lighthouse test Links Page
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/b7d96fda-aec7-46df-be12-daad7a7abe0f)
+
+"" BUGS/ERRORS ""
+Having to reload the page to add to the comment count
+
+CORS errror:
+A CORS (Cross-Origin Resource Sharing) error occurs when a web application tries to make a request to a resource from a different origin (domain, protocol, or port) than the one that served the initial web page. This security feature is enforced by web browsers to prevent malicious websites from accessing sensitive data. . Originally I fixed this iusse in my local environment and it appreared to disapear . When testing close to the deadline I felt it safer submititng with errors rather then risk breaking a deployed version.
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/0150a4be-ed68-4e89-8a9a-fd1090cdaf59)
+
+
+**Future features**
+In future versions  Id like to impliment the following:
+ -search bar: for users to serch for articles more easily
+
+-profile page: I think users would enjoy having theor own custom profile page where they can see their list of posts , similar to what you see on other social media sites
+
+-classifieds section: A section for users to buy, sell , look for goods and services associates with organics._
+
+-take the content box out of my custom model : This field is not necessery but when I removed it the model broke so I chose to leave it for this version
+
+-
 
