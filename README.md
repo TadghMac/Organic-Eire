@@ -103,11 +103,13 @@ My Custom Model
 
 **Users Permissions**
 A visiting user can read articles , can access all links but can not comment 
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/da63b1d6-4c0e-4eeb-af8d-aeca6f703e1c)
+
+
 
 **registered users**
 Can commment on articles ,can also post articles once they have been verified by the admin . 
 
-![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/da63b1d6-4c0e-4eeb-af8d-aeca6f703e1c)
 
 
 **Testing**
@@ -124,9 +126,14 @@ Creating in my custom model
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/1f0ae21f-f527-4938-b974-a485524787d1)
 
 
-Maing changes
+Edit 
 
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/3c8360b9-4caf-4434-90e5-8cda7c2b894a)
+
+
+Delete 
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/3cda1c60-321d-46f0-af49-8b155fe2b2c6)
 
 
 
