@@ -8,11 +8,6 @@ body {
     font-weight: 700;
     color: #4A4A4F;
 }
-
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -26,7 +21,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #f9fcfa;
 }
 
 .card {
@@ -142,7 +137,7 @@ body {
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #de09ed;
 }
 
 .btn-like:hover,

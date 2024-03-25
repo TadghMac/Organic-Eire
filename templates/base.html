@@ -34,7 +34,7 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- Navigation bar and links -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><span style="color: rgb(12, 109, 12);">Organic</span> Éire </span></a>
@@ -108,10 +108,20 @@
         <p class="m-0 text-center text-white">{% block copyright %}
             Copyright 2024 Tadgh Mac
         {% endblock %}</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3" href="https://twitter.com/home?lang=en"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+        <p class="m-0 text-center text-white">
+            Follow us: 
+            <a href="https://twitter.com/home?lang=en" target="_blank">
+                <i class="fab fa-twitter-square ms-3"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square ms-3"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram-square ms-3"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube-square ms-3"></i>
+            </a>
         </p>
     </footer>
 
