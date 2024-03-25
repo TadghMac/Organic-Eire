@@ -194,6 +194,12 @@ Lighthouse test Links Page
 
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/b7d96fda-aec7-46df-be12-daad7a7abe0f)
 
+Lighthouse test Articles page
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/8367a357-7d9c-481d-a456-5a69886f5b5f)
+
+
+
 "" BUGS/ERRORS ""
 Having to reload the page to add to the comment count
 
@@ -204,11 +210,13 @@ A CORS (Cross-Origin Resource Sharing) error occurs when a web application tries
 
 **Future features**
 In future versions  Id like to impliment the following:
- -search bar: for users to serch for articles more easily
+ -search bar: for users to serch for articles and other users more easily
 
 -profile page: I think users would enjoy having theor own custom profile page where they can see their list of posts , similar to what you see on other social media sites
 
--classifieds section: A section for users to buy, sell , look for goods and services associates with organics._
+-classifieds section: A section for users to buy, sell , look for goods and services associates with organics.
+
+
 
 -take the content box out of my custom model : This field is not necessery but when I removed it the model broke so I chose to leave it for this version
 
