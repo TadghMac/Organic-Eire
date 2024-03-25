@@ -1,3 +1,6 @@
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/f4113577-eee5-4db8-9919-904d704a760f)
+
+
 **Organic Éire**
 
 Overview
