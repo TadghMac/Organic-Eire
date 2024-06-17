@@ -59,47 +59,58 @@ Links page concept
 ![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/f84f1fa9-2b75-40c2-9a4e-cb92574cd0a4)
 
 **Deployment**
+
 The deployment stage of the website should follow the steps below:
 
-1.Create the Heroku app
+1.Create the Heroku app:
 
-Sign up / Log in to Heroku
-In Heroku Dashboard page select 'New' and then 'Create New App'
-Name a project - I decided on organic-eire (note : the app's name must be unique)
-Select EU as that was my region in the moment of creating the app
-Select "Create App"
-In the "Deploy" tab choose GitHub as the deployment method
-Connect your GitHub account/ find and connect your GitHub repository
-Set up enviroment variables
+ Sign up / Log in to Heroku
+ In Heroku Dashboard page select 'New' and then 'Create New App'
+ Name a project - I decided on organic-eire (note : the app's name must be unique)
+ Select EU as that was my region in the moment of creating the app
+ Select "Create App"
+ In the "Deploy" tab choose GitHub as the deployment method
+ Connect your GitHub account/ find and connect your GitHub repository
+ Set up enviroment variables
 
-In the Django app editor create env.py in the top level
-In env.py import os
-In env.py set up necessary enviroment variables:
-add a secret key using: os.environ['SECRET_KEY'] = 'your secret key'
-for the database variable the line should include os.environ['DATABASE_URL']= 'Paste the database link in here'
-in settings.py replace value of SECRET_KEY variable with os.environ.get('SECRET_KEY')
-in settings.py change the value of DATABASES variable to 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-In Django app's settings.py on top of the file add:
+ In the Django app editor create env.py in the top level
+ In env.py import os
+ In env.py set up necessary enviroment variables:
+ add a secret key using: os.environ['SECRET_KEY'] = 'your secret key'
+ for the database variable the line should include os.environ['DATABASE_URL']= 'Paste the database link in here'
+ In settings.py replace value of SECRET_KEY variable with os.environ.get('SECRET_KEY')
+ In settings.py change the value of DATABASES variable to 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+ In Django app's settings.py on top of the file add:
+
+
 from pathlib import Path
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+
+
 Navigate to the "Settings" tab in Heroku.
 Open the "Config Vars" section and add DATABASE_URL as Key and the database link from app's env.py as Value
 Add SECRET_KEY for the Key value and the secret key value from env.py as the Value
+
 In the terminal migrate the models over to the new database connection
+
 In settings.py add the STATIC files settings as follows:
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 Change the templates directory in settings.py to: TEMPLARES_DIR = os.path.join(BASE_DIR, 'templates')
 In TEMPLATES variable change the 'DIRS' key to look like this: 'DIRS': [TEMPLARES_DIR],
+
 Add Heroku to the ALLOWED_HOSTS list (the format will be your-app-name.herokuapp.com, you can copy it from the Domains section in Settings tab in your Heroku app)
 If you haven't done that up to this point, then create in your Django app's code editor new top level folders: static and templates
+
 Create a new file on the top level directory - Procfile, remembering to use a capital letter
 Within the Procfile add following:
 web: guincorn PROJECT_NAME.wsgi
+
 In the terminal, add the changed files, commit and push to GitHub
 Heroku deployment
 
