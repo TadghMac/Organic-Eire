@@ -137,7 +137,10 @@ In Heroku, navigate to the Deployment tab and deploy the branch manually
 
 Heroku will display a build log- watch the build logs for any errors
 
-Once the build process is completed Heroku displays 'Your App Was Successfully Deployed' message and a link to the app to visit the live site
+Once the build process is completed Heroku displays a message and a link to the app to visit the live site
+
+![image](https://github.com/TadghMac/Organic-Eire/assets/152603370/37183fdf-7916-46b6-a429-0b9b5996430d)
+
 
 **User Stories**
 
